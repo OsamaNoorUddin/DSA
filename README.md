@@ -38,6 +38,7 @@ DSA practice on LeetCode
 | [0643-maximum-average-subarray-i](https://github.com/MuhammadOsamaNooruddin/DSA/tree/master/0643-maximum-average-subarray-i) |
 | [0682-baseball-game](https://github.com/MuhammadOsamaNooruddin/DSA/tree/master/0682-baseball-game) |
 | [0692-top-k-frequent-words](https://github.com/MuhammadOsamaNooruddin/DSA/tree/master/0692-top-k-frequent-words) |
+| [0704-binary-search](https://github.com/MuhammadOsamaNooruddin/DSA/tree/master/0704-binary-search) |
 | [0739-daily-temperatures](https://github.com/MuhammadOsamaNooruddin/DSA/tree/master/0739-daily-temperatures) |
 | [0948-sort-an-array](https://github.com/MuhammadOsamaNooruddin/DSA/tree/master/0948-sort-an-array) |
 | [1019-squares-of-a-sorted-array](https://github.com/MuhammadOsamaNooruddin/DSA/tree/master/1019-squares-of-a-sorted-array) |
@@ -171,6 +172,7 @@ DSA practice on LeetCode
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/MuhammadOsamaNooruddin/DSA/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0209-minimum-size-subarray-sum](https://github.com/MuhammadOsamaNooruddin/DSA/tree/master/0209-minimum-size-subarray-sum) |
 | [0349-intersection-of-two-arrays](https://github.com/MuhammadOsamaNooruddin/DSA/tree/master/0349-intersection-of-two-arrays) |
+| [0704-binary-search](https://github.com/MuhammadOsamaNooruddin/DSA/tree/master/0704-binary-search) |
 | [1046-max-consecutive-ones-iii](https://github.com/MuhammadOsamaNooruddin/DSA/tree/master/1046-max-consecutive-ones-iii) |
 ## Stack
 |  |
