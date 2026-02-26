@@ -7,23 +7,30 @@ var isPalindrome = function(s) {
     if(!s.length) return false;
     if(s === "") return true;
 
-    let letters = [];
-    for(let i=0; i<s.length; i++){
-        let char = s[i].charCodeAt(0);
-        // console.log(char)
-        if((char >= 65 && char <= 90) || (char >= 97 && char <= 122) || (char >= 48 && char <= 57) ){
-            letters.push(s[i].toLowerCase());
-        }
+   let left = 0;
+   let right = s.length - 1;
+
+   while(left <= right){
+
+    while(left < right && !isAlphaNumeric(s[left])){
+        left++;
     }
 
-    let left = 0;
-    let right = letters.length - 1;
-    
-    while(left < right){
-        if(letters[left] !== letters[right]) return false;
-        left++;
+    while(left < right && !isAlphaNumeric(s[right])){
         right--;
     }
 
+    if(s[left].toLowerCase() !== s[right].toLowerCase()) return false
+    left++;
+    right--;
+
+   }
+
     return true
+}
+
+function isAlphaNumeric(char){
+    let charAt = char.charCodeAt(0);
+    if((charAt >= 65 && charAt <= 90) || (charAt >= 97 && charAt <= 122) || (charAt >= 48 && charAt <= 57)) return true;
+    else return false;
 }
