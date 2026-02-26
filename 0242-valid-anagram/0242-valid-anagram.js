@@ -6,22 +6,27 @@
 var isAnagram = function(s, t) {
    
    if(s.length !== t.length) return false;
-   if(s === "" || t === "") return false;
 
-    let myMap = new Map();
+   let myMap = new Map();
 
-    for(let n of s){
-        myMap.set(n, (myMap.get(n) || 0) + 1 )
-    }
+   for(let i=0; i<s.length; i++){
+        if(myMap.has(s[i])){
+            myMap.set(s[i], myMap.get(s[i]) + 1);
+        }else{
+            myMap.set(s[i], 1)
+        }
+   }
 
-    for(let n of t){
-        if(myMap.has(n)){
-            myMap.set(n, myMap.get(n) - 1);
-            if(myMap.get(n) === 0 ) myMap.delete(n)
+   for(let i=0; i<t.length; i++){
+        if(myMap.has(t[i])){
+            if(myMap.get(t[i]) === 1) {
+                myMap.delete(t[i])
+            }else{
+                myMap.set(t[i], myMap.get(t[i]) - 1)
+            }
         }else{
             return false
         }
-    }
-
-    return myMap.size > 0 ? false : true
+   }
+    return myMap.size === 0
 };
