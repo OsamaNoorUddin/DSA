@@ -4,16 +4,16 @@
  */
 var maxArea = function(height) {
 
-    if(height.length === 0) return 0;
+    if(!height.length) return 0;
 
     let left = 0;
     let right = height.length - 1;
-    let maxArea = -Infinity;
+    let max = 0;
 
     while(left < right){
 
-        let currArea = (right - left) * Math.min(height[left],height[right]);
-        maxArea = Math.max(currArea, maxArea);
+        let currArea = (right - left) * Math.min(height[left], height[right]);
+        max = Math.max(max,currArea);
 
         if(height[left] < height[right]){
             left++
@@ -23,6 +23,6 @@ var maxArea = function(height) {
 
     }
 
-    return maxArea
-    
+    return max
+
 }
