@@ -15,7 +15,6 @@ var reverseList = function(head) {
     let current = head;
 
     while(current){
-
         let newNode = current.next;
         current.next = prev;
         prev = current;
@@ -24,4 +23,5 @@ var reverseList = function(head) {
     }
 
     return prev
+
 }
